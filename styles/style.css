@@ -1,0 +1,9 @@
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.i {
+    display: flex;
+    flex-direction: column;
+}

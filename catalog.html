@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <link text="text/css" rel="stylesheet" href="/styles/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="src/img/svg/favicon.svg">
+    <title>HTML Academy: Девайс</title>
+  </head>
+  <body>
+    <header>
+      <nav id="header-search">
+        <div class="container">
+          <a href="index.html">
+          <div class="logo">
+            <img src="src/img/svg/d.svg">
+            <img src="src/img/svg/e.svg">
+            <img src="src/img/svg/v.svg">
+            <div class="i">
+              <img src="src/img/svg/i_up.svg">
+              <img src="src/img/svg/i.svg">
+            </div>
+            <img src="src/img/svg/c.svg">
+            <img src="src/img/svg/e.svg">
+          </div>
+          </a>
+          <div class="header_search">
+            <div class="input_search">
+              <form action="https://echo.htmlacademy.ru">
+                <img src="src/img/svg/search.svg">
+                <input name="search-text" type="search" placeholder="Поиск по сайту">
+                <input id="search" name="search" type="submit" value="Найти">
+              </form>
+              <form action="https://echo.htmlacademy.ru">
+                <img src="src/img/svg/people.svg">
+                <button class="sign_in" id="sign-in">Войти</button>
+              </form>
+            </div>
+            <div class="buttons">
+              <a class="compare_link" href="#">
+                <span></span>
+                <span><img src="src/img/svg/compare.svg"></span>
+                <span>Сравнить</span>
+              </a>
+              <a class="whitelist_link" href="#">
+                <span></span>
+                <span><img src="src/img/svg/cart.svg"></span>
+                <span>Корзина</span>
+              </a>
+            </div>
+          </div>
+          <div>
+            <a class="catalog" href="catalog.html">
+              <span>Каталог товаров</span>
+              <span><img src="src/img/svg/plus.svg"></span>
+            </a>
+          </div>
+          <div>
+            <a class="delivery" href="#">Доставка</a>
+            <a class="warranty" href="#">Гаранитии</a>
+            <a class="contact" href="#">Контакты</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+    <main>
+      <div class="container_main">
+        <section class="subtitle">
+            <h1>Моноподы для селфи</h1>
+            <ul>
+                <li>Главная</li>
+                <li>Каталог товаров</li>
+                <li>Монопод для селфи</li>
+            </ul>
+        </section>
+        <section class="content">
+          <div>
+              <form action="https://echo.htmlacademy.ru">
+                  <p><b>Фильтр:</b></p>
+                  <img src="src/img/svg/line-1.svg">
+
+                  <!--Ползунок с ценой-->
+                  <p><b>Стоимость</b></p>
+                  <div>
+                      <input type="range" min="0" max="10000" step="1" value="5000" name="price_range">
+                      <img src="src/img/svg/line-1.svg">
+                  </div>
+
+                  <!--Выбор цвета-->
+                  <p><b>Цвет</b></p>
+                  <div>
+                      <input type="checkbox" name="color" id="black" value="black" checked>
+                      <label for="black">Черный</label>
+                      <input type="checkbox" name="color" id="white" value="white" checked>
+                      <label for="white">Белый</label>
+                      <input type="checkbox" name="color" id="blue" value="blue">
+                      <label for="blue">Синий</label>
+                      <input type="checkbox" name="color" id="red" value="red">
+                      <label for="red">Красный</label>
+                      <input type="checkbox" name="color" id="pink" value="pink">
+                      <label for="pink">Розовый</label>
+                  </div>
+                  <img src="src/img/svg/line-1.svg">
+
+                  <!--Bluetooth-->
+                  <p><b>Bluetooth</b></p>
+                  <div>
+                      <input type="radio" name="bluetooth" id="yes" value="yes" checked>
+                      <label for="yes">Есть</label>
+                      <input type="radio" name="bluetooth" id="no" value="no">
+                      <label for="no">Нет</label>
+                  </div>
+
+                  <!--Подведение итогов (ПОКАЗАТЬ)-->
+                  <div>
+                      <button type="submit">Показать</button>
+                  </div>
+              </form>
+          </div> 
+          <div>
+              <div>
+                  <p>Сортировка</p>
+                  <select class="top-filter" name="top-filter">
+                      <option value="1">По цене</option>
+                      <option value="2">Популярные</option>
+                      <option value="3">По наименованию</option>
+                      <option value="4">Обсуждаемые</option>
+                      <option value="5">По оценке</option>
+                  </select>
+              </div>
+              <section>
+                  <a href="#" class="thumb">
+                      <img src="#" alt="Любительская селфи-палка">
+                      <div>
+                          <p>Любительская селфи-палка</p>
+                          <p>500 &#8381;</p>
+                      </div>
+                  </a>
+                  <a href="#" class="thumb">
+                      <img src="#" alt="Профессиональная селфи-палка">
+                      <div>
+                          <p>Профессиональная селфи-палка</p>
+                          <p>1500 &#8381;</p>
+                      </div>
+                  </a>
+                  <a href="#" class="thumb">
+                      <img src="#" alt="Непотопляемая селфи-палка">
+                      <div>
+                          <p>Непотопляемая селфи-палка</p>
+                          <p>2500 &#8381;</p>
+                      </div>
+                  </a>
+                  <a href="#" class="thumb">
+                      <img src="#" alt="Селфи-палка Следуй за мной">
+                      <div>
+                          <p>Селфи-палка «Следуй за мной»</p>
+                          <p>500 &#8381;</p>
+                      </div>
+                  </a>
+              </section>
+              <div>
+                  <button type="button" class="show-more">Загрузить ещё</button>
+              </div>
+              <div class="pagination">
+                  <a href="#">Назад</a>
+                  <ul class="widget-page">
+                      <li class="page">
+                          <a href="#">1</a>   
+                      </li>
+                      <li class="page">
+                          <a href="#">2</a>   
+                      </li>
+                      <li class="page">
+                          <a href="#">3</a>   
+                      </li>
+                      <li class="page">
+                          <a href="#">...</a>   
+                      </li>
+                      <li class="page">
+                          <a href="#">15</a>   
+                      </li>
+                  </ul>
+                  <a href="#">Вперёд</a>
+              </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+
+    <footer>
+      <div class="logo">
+        <img src="src/img/svg/d.svg">
+        <img src="src/img/svg/e.svg">
+        <img src="src/img/svg/v.svg">
+        <div class="i">
+          <img src="src/img/svg/i_up.svg">
+          <img src="src/img/svg/i.svg">
+        </div>
+        <img src="src/img/svg/c.svg">
+        <img src="src/img/svg/e.svg">
+      </div>
+      <div>
+        <div>
+          <p>
+            Санкт-Петербург, набережная
+            реки Карповки, 5, литера П.
+          </p>
+          <a href="#"><h2>Доставка</h2></a>
+          <a href="#"><h2>Гарантия</h2></a>
+          <a href="#"><h2>Контакты</h2></a>
+          <a href="tel:+78128121212">+7 (812) 812-12-12</a>
+          <img src="src/img/svg/line_yellow_80.svg">
+          <img src="src/img/svg/telegram.svg">
+          <img src="src/img/svg/youtube.svg">
+          <img src="src/img/svg/twitter.svg">
+          <a href="https://htmlacademy.ru/"><img src="src/img/svg/html_academy.svg"></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

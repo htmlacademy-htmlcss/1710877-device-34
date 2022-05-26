@@ -48,10 +48,6 @@ body {
     display: flex;
 }
 
-.indicators:first-child {
-    background-color: black;
-}
-
 .advertising {
     display: flex;
 }

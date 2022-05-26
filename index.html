@@ -58,33 +58,86 @@
         <section class="advertising">
           <div class="slider">
             <button class="slider-left" type="button">Назад!</button>
-            <img src="src/img/jpg/slider-1.jpg" alt="Квадрокоптер модели XXX">
+            <img src="src/img/jpg/slider-1.png" alt="Квадрокоптер модели XXX">
+            <img src="src/img/jpg/slider-2.png" alt="Фитнес-браслет" style="display: none;">
+            <img src="src/img/jpg/slider-3.png" alt="Монопод" style="display: none;">
             <button class="slider-right" type="button">Вперед!</button>
           </div>
-          <div>
-            <div>
-              <b>Порхает как бабочка,
-              жалит как пчела!</b>
-              <p>Этот обычный, на первый взгляд, квадрокоптер оснащен
-              мощным лазером, замаскированным под стандартную камеру.</p>
-            </div>
-            <div class="illustration-des">
-              <a href="#">Подробнее</a>
-              <div class="indicators">
-                <button class="ellipse" type="button" name="ellipse">Ellipse</button> 
-                <button class="ellipse" type="button" name="ellipse">Ellipse</button>
-                <button class="ellipse" type="button" name="ellipse">Ellipse</button>
+          <ul>
+            <li>
+              <div>
+                <b>Порхает как бабочка, жалит как пчела!</b>
+                <p>Этот обычный, на первый взгляд, квадрокоптер оснащен
+                мощным лазером, замаскированным под стандартную камеру.</p>
+                <p class="slider-number">01</p>
               </div>
-            </div>
-            <div class="characteristics">
-              <dl class="characteristics-divide">
-                <dt>800 м</dt>
-                <dd>Дальность полета</dd>
-                <dt>50 м</dt>
-                <dd>Радиус поражения</dd>
-              </dl>
-            </div>
-          </div>
+              <div class="illustration-des">
+                <a href="#">Подробнее</a>
+                <div class="slider-indicators">
+                  <button class="ellipse" type="button" name="ellipse">Ellipse</button> 
+                  <button class="ellipse" type="button" name="ellipse">Ellipse</button>
+                  <button class="ellipse" type="button" name="ellipse">Ellipse</button>
+                </div>
+              </div>
+              <div class="characteristics">
+                <dl class="characteristics-divide">
+                  <dt>800 м</dt>
+                  <dd>Дальность полета</dd>
+                  <dt>50 м</dt>
+                  <dd>Радиус поражения</dd>
+                </dl>
+              </div>
+            </li>
+            <li style="display: none;">
+              <div>
+                <b>Худеем правильно!</b>
+                <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+                <p class="slider-number">02</p>
+              </div>
+              <div class="illustration-des">
+                <a href="#">Подробнее</a>
+                <div class="slider-indicators">
+                  <button class="ellipse" type="button" name="ellipse">Ellipse</button> 
+                  <button class="ellipse" type="button" name="ellipse">Ellipse</button>
+                  <button class="ellipse" type="button" name="ellipse">Ellipse</button>
+                </div>
+              </div>
+              <div class="characteristics">
+                <dl class="characteristics-divide">
+                  <dt>360 часов</dt>
+                  <dd>Без подзарядки</dd>
+                </dl>
+              </div>
+            </li>
+            <li style="display: none;">
+              <div>
+                <b>Делай селфи, как Бен Стиллер! </b>
+                <p>
+                  Самая длинная палка для селфи доступна в нашем магазине. 
+                  Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
+                </p>
+                <p class="slider-number">03</p>
+              </div>
+              <div class="illustration-des">
+                <a href="#">Подробнее</a>
+                <div class="slider-indicators">
+                  <button class="ellipse" type="button" name="ellipse">Ellipse</button> 
+                  <button class="ellipse" type="button" name="ellipse">Ellipse</button>
+                  <button class="ellipse" type="button" name="ellipse">Ellipse</button>
+                </div>
+              </div>
+              <div class="characteristics">
+                <dl class="characteristics-divide">
+                  <dt>8,5 м</dt>
+                  <dd>Длина палки</dd>
+                  <dt>5 кг</dt>
+                  <dd>Вес палки</dd>
+                  <dt>Карбон</dt>
+                  <dd>Материал</dd>
+                </dl>
+              </div>
+            </li>
+          </ul>
         </section>
         <section class="category">
           <ul class="category-list">
@@ -113,6 +166,31 @@
         </section>
         <section class="delivery-info">
           <p>Доставим редкий товар под заказ</p>
+          <section class="delivery-modal" style="display: none;">
+            <form>
+              <h2>Доставка под заказ</h2>
+              <span>
+                <label for="login" name="login">Ваше имя:</label>
+                <input type="text" id="login" placeholder="Введите имя">
+              </span>
+              <span>
+                <label for="e-mail" name="e-mail">Ваш e-mail:</label>
+                <input type="email" id="e-mail" placeholder="Ваш e-mail">
+              </span>
+              <span>
+                <label for="product" name="product">Что нужно привезти:</label>
+                <input type="text" id="product" placeholder="В свободной форме">
+              </span>
+              <span>
+                <label for="amount" name="amount">Количество:</label>
+                <input type="number" id="amount" value="1">
+              </span>
+              <span>
+                <label for="delivery-submit" name="delivery-submit">Отправить</label>
+                <input type="submit" id="delivery-submit" placeholder="Отправить">
+              </span>
+            </form>
+          </section>
         <section>
         </section>
         <section>
@@ -125,9 +203,9 @@
               Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:
             </p>
             <ul>
-              <li>Меловые линии</li>
-              <li>СДИК</li>
-              <li>ТоксБерри</li>
+              <li><a href="#">Меловые линии</a></li>
+              <li><a href="#">СДИК</a></li>
+              <li><a href="#">ТоксБерри</a></li>
             </ul>
             <a href="#">Подробнее о нас</a>
           </div>

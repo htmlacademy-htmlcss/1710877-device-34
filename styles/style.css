@@ -26,25 +26,24 @@ body {
     font-family: 'Raleway';
 }
 
-/*Навигационная панель*/
+/*(NAV)Навигационная панель*/
+
 .logo {
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
 }
 
-.i {
-    display: flex;
-    flex-direction: column;
-}
 
 /*Содержимое страницы*/
+
 .illustration-des {
     display: flex;
     justify-content: space-between;
 
 }
 
+/*Слайдер*/
 .slider {
     display: flex;
 }

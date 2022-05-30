@@ -3,15 +3,15 @@
   <head>
     <meta charset="utf-8">
     <link text="text/css" rel="stylesheet" href="styles/style.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="src/img/svg/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="src/images/favicon.svg">
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
     <header>
-      <nav class="header-search">
-        <div class="container">
-          <a class="logo" href="index.html">
-            <img src="src/img/svg/logo.svg" alt="Интернет магазин Девайс">
+      <nav class="header-search container container-header">
+        <div class="nav-section">
+          <a class="logo">
+            <img src="src/images/logo.svg" alt="Интернет магазин Девайс">
           </a>
           <div class="header-search">
             <div class="input-search">
@@ -53,18 +53,14 @@
         </div>
       </nav>
     </header>
-    <main>
-      <div class="container-main">
-        <section class="advertising">
+    <main class="container">
+      <div>
+        <section class="advertising slider-backrgound">
           <div class="slider">
             <button class="slider-left" type="button">Назад!</button>
-            <img src="src/img/jpg/slider-1.png" alt="Квадрокоптер модели XXX">
-            <img src="src/img/jpg/slider-2.png" alt="Фитнес-браслет" style="display: none;">
-            <img src="src/img/jpg/slider-3.png" alt="Монопод" style="display: none;">
-            <button class="slider-right" type="button">Вперед!</button>
-          </div>
           <ul>
-            <li>
+            <li class="slider-item">
+              <img src="src/images/slider-1.png" alt="Квадрокоптер модели XXX">
               <div>
                 <b>Порхает как бабочка, жалит как пчела!</b>
                 <p>Этот обычный, на первый взгляд, квадрокоптер оснащен
@@ -74,10 +70,6 @@
               <div class="illustration-des">
                 <a href="#">Подробнее</a>
                 <div class="slider-indicators">
-                  <button class="ellipse" type="button" name="ellipse">Ellipse</button> 
-                  <button class="ellipse" type="button" name="ellipse">Ellipse</button>
-                  <button class="ellipse" type="button" name="ellipse">Ellipse</button>
-                </div>
               </div>
               <div class="characteristics">
                 <dl class="characteristics-divide">
@@ -88,7 +80,8 @@
                 </dl>
               </div>
             </li>
-            <li style="display: none;">
+            <li class="slider-item">
+              <img src="src/images/slider-2.png" alt="Фитнес-браслет">
               <div>
                 <b>Худеем правильно!</b>
                 <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
@@ -96,11 +89,6 @@
               </div>
               <div class="illustration-des">
                 <a href="#">Подробнее</a>
-                <div class="slider-indicators">
-                  <button class="ellipse" type="button" name="ellipse">Ellipse</button> 
-                  <button class="ellipse" type="button" name="ellipse">Ellipse</button>
-                  <button class="ellipse" type="button" name="ellipse">Ellipse</button>
-                </div>
               </div>
               <div class="characteristics">
                 <dl class="characteristics-divide">
@@ -109,7 +97,8 @@
                 </dl>
               </div>
             </li>
-            <li style="display: none;">
+            <li class="slider-item">
+              <img src="src/images/slider-3.png" alt="Монопод">
               <div>
                 <b>Делай селфи, как Бен Стиллер! </b>
                 <p>
@@ -120,11 +109,6 @@
               </div>
               <div class="illustration-des">
                 <a href="#">Подробнее</a>
-                <div class="slider-indicators">
-                  <button class="ellipse" type="button" name="ellipse">Ellipse</button> 
-                  <button class="ellipse" type="button" name="ellipse">Ellipse</button>
-                  <button class="ellipse" type="button" name="ellipse">Ellipse</button>
-                </div>
               </div>
               <div class="characteristics">
                 <dl class="characteristics-divide">
@@ -138,6 +122,13 @@
               </div>
             </li>
           </ul>
+            <button class="slider-right" type="button">Вперед!</button>
+          </div>
+          <div class="slider-indicators">
+            <button class="ellipse" type="button" name="ellipse">Ellipse</button> 
+            <button class="ellipse" type="button" name="ellipse">Ellipse</button>
+            <button class="ellipse" type="button" name="ellipse">Ellipse</button>
+          </div>
         </section>
         <section class="category">
           <ul class="category-list">
@@ -149,26 +140,27 @@
             <li class="category-item"><a href="#">Квадрокоптеры</a></li>
           </ul>
         </section>
-        <section class="terms" style="display: flex;">
+        <section class="terms">
           <ul>
             <li><a href="#"><h3>Доставка</h3></a></li>
             <li><a href="#"><h3>Гаранития</h3></a></li>
             <li><a href="#"><h3>Кредит</h3></a></li>
           </ul>
-          <ul>
-            <li>
+          <ul class="terms-list">
+            <li class="terms-item">
               <h2>Доставка</h2>
               <p>Мы с удовольствием доставим ваш товар прямо
                 к вашему подъезду совершенно бесплатно! Ведь
                 мы неплохо заработаем, поднимая его на ваш этаж.</p>
+              <img src="src/images/run_man.svg" alt="">
             </li>
-            <li style="display: none;">
+            <li class="terms-item">
               <h2>Гарантия</h2>
               <p>Если из-за возгорания купленного у нас товара у вас
                 сгорит дом — не переживайте, мы выдадим вам новый.
                 Товар, не дом, конечно же.</p>
             </li>
-            <li style="display: none;">
+            <li class="terms-item">
               <h2>Кредит</h2>
               <p>Залезть в долговую яму стало проще! Кредитные 
                 консультанты подберут для вас наиболее выгодные 
@@ -257,9 +249,10 @@
     </main>
 
 
-    <footer>
-      <a class="logo-footer" href="index.html">
-        <img src="src/img/svg/logo_footer.svg" alt="Интернет магазин Девайс">
+    <footer class="footer">
+      <div class="container">
+      <a class="logo-footer">
+        <img src="src/images/logo_footer.svg" alt="Интернет магазин Девайс">
       </a>
       <div>
         <div>
@@ -267,9 +260,9 @@
             Санкт-Петербург, набережная
             реки Карповки, 5, литера П.
           </p>
-          <a href="#"><h2>Доставка</h2></a>
-          <a href="#"><h2>Гарантия</h2></a>
-          <a href="#"><h2>Контакты</h2></a>
+          <a href="#">Доставка</a>
+          <a href="#">Гарантия</a>
+          <a href="#">Контакты</a>
           <a href="tel:+78128121212">+7 (812) 812-12-12</a>
           <ul>
             <li>
@@ -283,9 +276,10 @@
             </li>
           </ul>
           <a href="https://htmlacademy.ru/">
-            <img src="src/img/svg/html_academy.svg">
+            <img src="src/images/html_academy.svg">
           </a>
         </div>
+      </div>
       </div>
     </footer>
   </body>

@@ -1,3 +1,7 @@
+/*Подключение нормалайза)*/
+
+@import "./normalize.css";
+
 /*Подключение шрифтов*/
 @font-face {
     font-family: "Rubik";
@@ -21,9 +25,34 @@
     url("../fonts/raleway/raleway-800.woff2") format("woff2");
 }
 
+
 /*Общие правила*/
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
 body {
     font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    min-height: 100%; 
+}
+
+/*Контейнер*/
+.container {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 1160px;
+    margin: 0px 140px;
 }
 
 /*(NAV)Навигационная панель*/
@@ -34,18 +63,35 @@ body {
     align-items: flex-end;
 }
 
+/*Отступы слева и справа для панели навигации*/
+
+.nav-section {
+    padding: 0 60px;
+}
 
 /*Содержимое страницы*/
 
-.illustration-des {
-    display: flex;
-    justify-content: space-between;
-
+/*Убираем стиль списка*/
+ul > li {
+    list-style: none;
 }
+
 
 /*Слайдер*/
 .slider {
     display: flex;
+}
+
+/*Flex на элипсы в слайдере*/
+.illustration-des {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Задний фон на слайдер*/
+.slider-backrgound {
+    height: 300px;
+    background: repeat url("../src/images/background_header.svg");
 }
 
 .advertising {
@@ -56,26 +102,41 @@ body {
     display: flex;
 }
 
-.characteristics-divide {
-    margin-right: 20px;
-}
-
 /*Категории товаров*/
-.category {
+
+/*Привязка иконок к списку*/
+.category-list {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 
-.category-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 160px;
+.category-list > li {
     width: 160px;
-    background-color: #FFE17F;
+    height: 160px;
 }
 
-.category-list {
+.category > .category-list > li:nth-child(1) {
+    background-image: no-repeat url("../src/images/virtual.svg");
+}
+.category > .category-list > li:nth-child(2) {
+    background-image: no-repeat url("../src/images/monopod.svg");
+}
+.category > .category-list > li:nth-child(3) {
+    background-image: no-repeat url("../src/images/action_cam.svg");
+}
+.category > .category-list > li:nth-child(4) {
+    background-image: no-repeat url("../src/images/fitnes.svg");
+}
+.category > .category-list > li:nth-child(5) {
+    background-image: no-repeat url("../src/images/smart_clock.svg");
+}
+.category > .category-list > li:nth-child(6) {
+    background-image: no-repeat url("../src/images/quadrocopter.svg");
+}
+
+/*Необходимо проверить на надобность*/
+/*.category-list {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -88,7 +149,15 @@ body {
     display: flex;
     margin: 0px;
     padding: 0px;
+}*/
+
+.terms {
+    display: flex;
 }
 
-
 /*Доставка, гарантии, кредит*/
+/*FOOTER*/
+.footer {
+    max-width: auto;
+    background: #444444;
+}

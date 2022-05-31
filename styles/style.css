@@ -103,22 +103,40 @@ ul > li {
 }
 
 /*Категории товаров*/
-.category {
+
+/*Привязка иконок к списку*/
+.category-list {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 
-/*Создание цветного блока для раздела*/
-.category-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 160px;
+.category-list > li {
     width: 160px;
-    background-color: #FFE17F;
+    height: 160px;
 }
+
+.category > .category-list > li:nth-child(1) {
+    background-image: no-repeat url("../src/images/virtual.svg");
+}
+.category > .category-list > li:nth-child(2) {
+    background-image: no-repeat url("../src/images/monopod.svg");
+}
+.category > .category-list > li:nth-child(3) {
+    background-image: no-repeat url("../src/images/action_cam.svg");
+}
+.category > .category-list > li:nth-child(4) {
+    background-image: no-repeat url("../src/images/fitnes.svg");
+}
+.category > .category-list > li:nth-child(5) {
+    background-image: no-repeat url("../src/images/smart_clock.svg");
+}
+.category > .category-list > li:nth-child(6) {
+    background-image: no-repeat url("../src/images/quadrocopter.svg");
+}
+
 /*Необходимо проверить на надобность*/
-.category-list {
+/*.category-list {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -131,7 +149,7 @@ ul > li {
     display: flex;
     margin: 0px;
     padding: 0px;
-}
+}*/
 
 .terms {
     display: flex;

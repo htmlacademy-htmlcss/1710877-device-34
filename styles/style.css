@@ -16,19 +16,21 @@
     font-style: normal;
     font-weight: 700;
     src: local("Rubik"),
-    url("../fonts/rubik/rubik-700.woff2") format("woff2");
+        url("../fonts/rubik/rubik-700.woff2") format("woff2");
     font-display: swap;
 }
 @font-face {
     font-family: "Raleway";
     font-style: normal;
-    font-weight: 400;
+    font-weight: 800;
     src: local("Raleway"),
-    url("../fonts/raleway/raleway-800.woff2") format("woff2");
+        url("../fonts/raleway/raleway-800.woff2") format("woff2");
     font-display: swap;
 }
 
-
+:root {
+    --main-color: #000000;
+  }
 
 
 
@@ -45,43 +47,60 @@ html {
 }
 
 body {
-    font-family: 'Rubik';
+    font-family: 'Rubik', sans-serif;
     font-style: normal;
     margin: 0;
     padding: 0;
     min-height: 100%;
-    color:black;
 }
 
+
 /*Убираем стиль списка*/
-ul > li {
+.catalog-list {
     list-style: none;
 }
 
-/*Убираем подчеркивание ссылок*/
+.category-list {
+    list-style: none;
+}
+
+.terms-list {
+    list-style: none;
+}
+
+.partner-item::marker {
+    color: #FFC700;
+}
+
+.subtitle-list {
+    list-style: none;
+}
+
+.thumb-list {
+    list-style: none;
+}
+
 a {
     text-decoration: none;
 }
 
 
-
-
-
 /*Контейнер*/
 .container {
-    display: block;
-    justify-content: center;
-    align-items: center;
-    align-self: center;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
     width: 1160px;
     margin: 0px 140px;
+
 }
 
 
 /*Текстовые стили*/
 
 .main-title {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 50px;
     line-height: 50px;
@@ -97,10 +116,11 @@ a {
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
+    text-decoration: none;
 }
 
-.title-2 {
-    font-family: 'Raleway';
+.title-subtitle {
+    font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
     line-height: 21px;
@@ -108,7 +128,7 @@ a {
     text-transform: uppercase;
 }
 
-.title-3 {
+.title-caption {
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
@@ -127,13 +147,7 @@ a {
     line-height: 20px;
 }
 
-.text-small-2 {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-}
-
-.link-small-2 {
+.text-small-desc {
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
@@ -158,7 +172,7 @@ a {
 }
 
 .category-item-description {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
     line-height: 24px;
@@ -166,7 +180,7 @@ a {
 }
 
 .interactive-button {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
     line-height: 21px;
@@ -176,7 +190,7 @@ a {
 }
 
 .delivery-text {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 20px;
     line-height: 23px;
@@ -199,7 +213,7 @@ a {
 
 .filter-item {
     font-family: 'Raleway';
-    font-weight: 800;
+    font-weight: 800, sans-serif;
     font-size: 16px;
     line-height: 19px;
     letter-spacing: 0.2em;

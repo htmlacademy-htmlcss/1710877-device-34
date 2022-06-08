@@ -22,7 +22,7 @@
 
           <!--СТРОКА ПОИСКА, КНОПКА ВХОДА, КОРЗИНА, СРАВНИТЬ-->
           <section class="header-search">
-            <div class="input-search text-small-2">
+            <div class="input-search text-small-desc">
               <form action="https://echo.htmlacademy.ru">
                 <input name="search-text" type="search" placeholder="Поиск по сайту">
                 <input id="search" name="search" type="submit" value="Найти">
@@ -35,7 +35,7 @@
               <a class="compare-link" href="#">
                 <span>Сравнить</span>
               </a>
-              <a class="whitelist-link text" href="#">
+              <a class="whitelist-link" href="#">
                 <span>Корзина</span>
               </a>
             </div>
@@ -43,10 +43,10 @@
 
           <!--РАСКРЫВАЮЩИЙСЯ СПИСОК-->
           <div>
-            <a class="title-2" href="catalog.html">
+            <a class="title-subtitle" href="catalog.html">
               <span>Каталог товаров</span>
             </a>
-            <ul>
+            <ul class="catalog-list">
               <li class="catalog-item"><a href="#">Виртуальная реальность</a></li>
               <li class="catalog-item"><a href="#">Моноподы для селфи</a></li>
               <li class="catalog-item"><a href="#">Экшн-камеры</a></li>
@@ -56,9 +56,9 @@
             </ul>
           </div>
           <div>
-            <a class="delivery title-2" href="#">Доставка</a>
-            <a class="warranty title-2" href="#">Гаранитии</a>
-            <a class="contact title-2" href="#">Контакты</a>
+            <a class="delivery title-subtitle" href="#">Доставка</a>
+            <a class="warranty title-subtitle" href="#">Гаранитии</a>
+            <a class="contact title-subtitle" href="#">Контакты</a>
           </div>
         </div>
       </nav>
@@ -215,15 +215,15 @@
               <h2 class="main-title">Доставка под заказ</h2>
               <span>
                 <label for="login" name="login" class="text-bold">Ваше имя:</label>
-                <input type="text" id="login" placeholder="Введите имя" class="text-small-2">
+                <input type="text" id="login" placeholder="Введите имя" class="text-small-desc">
               </span>
               <span>
                 <label for="e-mail" name="e-mail" class="text-bold">Ваш e-mail:</label>
-                <input type="email" id="e-mail" placeholder="Ваш e-mail" class="text-small-2">
+                <input type="email" id="e-mail" placeholder="Ваш e-mail" class="text-small-desc">
               </span>
               <span>
                 <label for="product" name="product" class="text-bold">Что нужно привезти:</label>
-                <input type="text" id="product" placeholder="В свободной форме" class="text-small-2">
+                <input type="text" id="product" placeholder="В свободной форме" class="text-small-desc">
               </span>
               <span>
                 <label for="amount" name="amount" class="text-bold">Количество:</label>
@@ -247,10 +247,10 @@
             <p class="text">
               Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:
             </p>
-            <ul class="text-bold">
-              <li><a href="#">Меловые линии</a></li>
-              <li><a href="#">СДИК</a></li>
-              <li><a href="#">ТоксБерри</a></li>
+            <ul class="partner-list text-bold">
+              <li class="partner-item"><a href="#">Меловые линии</a></li>
+              <li class="partner-item"><a href="#">СДИК</a></li>
+              <li class="partner-item"><a href="#">ТоксБерри</a></li>
             </ul>
             <a class="interactive-button" href="#">Подробнее о нас</a>
           </div>
@@ -258,10 +258,10 @@
             <h2 class="main-title">Контакты</h2>
             <p class="text">Вы можете забрать товар сами, заехав в наш офис. 
               Заодно сможете проверить работоспособность покупки. </p>
-            <b class="title-3">Интернет-магазин «Девайс»</b>
+            <b class="title-caption">Интернет-магазин «Девайс»</b>
             <p class="text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
             <a class="link" href="tel:+78128121212">+7 (812) 812-12-12</a>
-            <b class="title-3">Время работы</b>
+            <b class="title-caption">Время работы</b>
             <p class="text">
               пн—пт: с 10:00 до 22:00
               сб—вс: с 10:00 до 19:00
@@ -297,22 +297,22 @@
       </a>
       <div>
         <div>
-          <p class="text-small-2">
+          <p class="text-small-desc">
             Санкт-Петербург, набережная
             реки Карповки, 5, литера П.
           </p>
-          <a class="title-2" href="#">Доставка</a>
-          <a class="title-2" href="#">Гарантия</a>
-          <a class="title-2" href="#">Контакты</a>
+          <a class="title-subtitle" href="#">Доставка</a>
+          <a class="title-subtitle" href="#">Гарантия</a>
+          <a class="title-subtitle" href="#">Контакты</a>
           <a class="link-small-2" href="tel:+78128121212">+7 (812) 812-12-12</a>
-          <ul>
-            <li>
+          <ul class="social-networks-list">
+            <li class="social-networks-item">
               <a class="icon" href="#">Telegram</a>
             </li>
-            <li>
+            <li class="social-networks-item">
               <a class="icon" href="#">Youtube</a>
             </li>
-            <li>
+            <li class="social-networks-item">
               <a class="icon" href="#">Twitter</a>
             </li>
           </ul>

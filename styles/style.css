@@ -80,7 +80,8 @@ body {
     list-style: none;
 }
 
-a {
+/*Убираем подчеркивание с ссылок*/
+.underline-remove {
     text-decoration: none;
 }
 

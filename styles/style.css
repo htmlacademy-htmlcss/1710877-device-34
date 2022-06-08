@@ -108,13 +108,11 @@ body {
 }
 
 .text {
-    font-weight: 400;
     font-size: 18px;
     line-height: 30px;
 }
 
 .link {
-    font-weight: 400;
     font-size: 18px;
     line-height: 30px;
     text-decoration: none;
@@ -143,13 +141,11 @@ body {
 }
 
 .text-small {
-    font-weight: 400;
     font-size: 14px;
     line-height: 20px;
 }
 
 .text-small-desc {
-    font-weight: 400;
     font-size: 16px;
     line-height: 20px;
 }
@@ -161,13 +157,11 @@ body {
 }
 
 .des-term {
-    font-weight: 400;
     font-size: 36px;
     line-height: 30px;
 }
 
 .des-definition {
-    font-weight: 400;
     font-size: 16px;
     line-height: 30px;
 }
@@ -201,13 +195,11 @@ body {
 }
 
 .catalog-item {
-    font-weight: 400;
     font-size: 16px;
     line-height: 18px;
 }
 
 .subtitle-item {
-    font-weight: 400;
     font-size: 16px;
     line-height: 19px;   
 }
@@ -222,7 +214,6 @@ body {
 }
 
 .filter-text {
-    font-weight: 400;
     font-size: 16px;
     line-height: 19px;
 }

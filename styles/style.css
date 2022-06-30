@@ -498,6 +498,10 @@ body {
 
 /*Страница каталога*/
 
+.content-bg {
+    background: #F0F0F0;
+}
+
 .content {
     display: flex;
 }
@@ -535,6 +539,14 @@ body {
     flex-direction: column;
 }
 
+.filter-price {
+    margin-bottom: 30px;
+}
+
+.filter {
+    padding: 25px 0px;
+}
+
 .filter-text {
     margin-top: 20px;
     display: table;
@@ -555,17 +567,23 @@ th:first-child {
 .right-block {
     margin: 0px;
     width: 840px;
-    padding: 0px 40px;
 }
 
 .sorting-main {
+    padding: 0px 40px;
     display: flex;
     justify-content: space-between;
 }
 
 .sorting {
     margin: 0px;
+    padding: 25px 0px;
+}
 
+.thumb {
+    width: 840px;
+    padding: 70px 40px 78px;
+    background: #FFFFFF;
 }
 
 .thumb-list {
@@ -610,13 +628,13 @@ th:first-child {
 
 .pagination {
     margin-top: 44px;
-    margin-bottom: 78px;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     height: 71px;
+    background: #EBEBEB;
 }
 
 .widget-page {

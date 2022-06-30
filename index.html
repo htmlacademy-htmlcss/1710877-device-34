@@ -3,6 +3,7 @@
 
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link text="text/css" rel="stylesheet" href="styles/style.css">
     <link rel="icon" type="image/png" sizes="32x32" href="src/images/favicon.svg">
     <title>HTML Academy: Девайс</title>
@@ -12,7 +13,7 @@
     <header>
 
       <!--НАВИГАЦИОННАЯ ПАНЕЛЬ-->
-      <nav class="header-search container container-header">
+      <nav class="container container-header">
         <div class="nav-section">
 
           <!--ЛОГОТИП-->
@@ -22,16 +23,16 @@
 
           <!--СТРОКА ПОИСКА, КНОПКА ВХОДА, КОРЗИНА, СРАВНИТЬ-->
           <section class="header-search">
-            <div class="input-search text-small-desc">
-              <form action="https://echo.htmlacademy.ru">
+            <div class="input-search text-small-desc header-search__left">
+              <form class="form-search" action="https://echo.htmlacademy.ru">
                 <input name="search-text" type="search" placeholder="Поиск по сайту">
                 <input id="search" name="search" type="submit" value="Найти">
               </form>
-              <a class="underline-remove login text" href="#">               
+              <a class="underline-remove login text" href="#">
                 <span>Войти</span>
               </a>
             </div>
-            <div class="buttons text">
+            <div class="buttons text header-search__right">
               <a class="underline-remove compare-link" href="#">
                 <span>Сравнить</span>
               </a>
@@ -42,24 +43,28 @@
           </section>
 
           <!--РАСКРЫВАЮЩИЙСЯ СПИСОК-->
-          <div>
-            <a class="underline-remove title-subtitle" href="catalog.html">
-              <span>Каталог товаров</span>
-            </a>
-            <ul class="catalog-list">
-              <li class="catalog-item"><a class="underline-remove" href="#">Виртуальная реальность</a></li>
-              <li class="catalog-item"><a class="underline-remove" href="#">Моноподы для селфи</a></li>
-              <li class="catalog-item"><a class="underline-remove" href="#">Экшн-камеры</a></li>
-              <li class="catalog-item"><a class="underline-remove" href="#">Фитнес-браслеты</a></li>
-              <li class="catalog-item"><a class="underline-remove" href="#">Умные часы</a></li>
-              <li class="catalog-item"><a class="underline-remove" href="#">Квадрокоптеры</a></li>
-            </ul>
-          </div>
-          <div>
-            <a class="underline-remove delivery title-subtitle" href="#">Доставка</a>
-            <a class="underline-remove warranty title-subtitle" href="#">Гаранитии</a>
-            <a class="underline-remove contact title-subtitle" href="#">Контакты</a>
-          </div>
+          <section class="main-menu">
+            <div class="catalog">
+              <a class="underline-remove title-subtitle catalog-title" href="catalog.html">
+                <span>Каталог товаров</span>
+                <img src="./src/images/plus.svg">
+              </a>
+              <ul class="catalog-list">
+                <li class="catalog-item"><a class="underline-remove" href="#">Виртуальная реальность</a></li>
+                <li class="catalog-item"><a class="underline-remove" href="#">Моноподы для селфи</a></li>
+                <li class="catalog-item"><a class="underline-remove" href="#">Экшн-камеры</a></li>
+                <li class="catalog-item"><a class="underline-remove" href="#">Фитнес-браслеты</a></li>
+                <li class="catalog-item"><a class="underline-remove" href="#">Умные часы</a></li>
+                <li class="catalog-item"><a class="underline-remove" href="#">Квадрокоптеры</a></li>
+              </ul>
+            </div>
+
+            <div class="main-menu-list">
+              <a class="underline-remove menu-delivery title-subtitle" href="#">Доставка</a>
+              <a class="underline-remove menu-warranty title-subtitle" href="#">Гаранитии</a>
+              <a class="underline-remove menu-contact title-subtitle" href="#">Контакты</a>
+            </div>
+          </section>
         </div>
       </nav>
     </header>
@@ -74,7 +79,7 @@
           <!--СЛАЙДЕР-->
           <div class="slider">
             <button class="slider-left" type="button">Назад!</button>
-            
+
             <!--ОБОЛОЧКА ДЛЯ СЛАЙДЕРОВ-->
             <ul>
 
@@ -125,7 +130,7 @@
                 <div>
                   <b class="slider-tit main-title">Делай селфи, как Бен Стиллер! </b>
                   <p class="slider-tit-specification text">
-                    Самая длинная палка для селфи доступна в нашем магазине. 
+                    Самая длинная палка для селфи доступна в нашем магазине.
                     Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
                   </p>
                   <p class="slider-number">03</p>
@@ -148,7 +153,7 @@
             <button class="slider-right" type="button">Вперед!</button>
           </div>
           <div class="slider-indicators">
-            <button class="ellipse" type="button" name="ellipse">Ellipse</button> 
+            <button class="ellipse" type="button" name="ellipse">Ellipse</button>
             <button class="ellipse" type="button" name="ellipse">Ellipse</button>
             <button class="ellipse" type="button" name="ellipse">Ellipse</button>
           </div>
@@ -168,37 +173,43 @@
 
         <!--УСЛОВИЯ Доставки, Гараний, Кредита-->
         <section class="terms">
-          <ul>
-            <li class="interactive-button"><a class="underline-remove" href="#"><h3>Доставка</h3></a></li>
-            <li class="interactive-button"><a class="underline-remove" href="#"><h3>Гаранития</h3></a></li>
-            <li class="interactive-button"><a class="underline-remove" href="#"><h3>Кредит</h3></a></li>
+          <ul class="terms-list-title">
+            <li class="interactive-button terms-item-title-sub"><a class="underline-remove" href="#"><h3>Доставка</h3></a></li>
+            <li class="interactive-button terms-item-title-sub"><a class="underline-remove" href="#"><h3>Гаранития</h3></a></li>
+            <li class="interactive-button terms-item-title-sub"><a class="underline-remove" href="#"><h3>Кредит</h3></a></li>
           </ul>
 
           <!--УСЛОВИЯ Доставки-->
           <ul class="terms-list">
             <li class="terms-item">
-              <h2 class="main-title">Доставка</h2>
-              <p class="text">Мы с удовольствием доставим ваш товар прямо
-                к вашему подъезду совершенно бесплатно! Ведь
-                мы неплохо заработаем, поднимая его на ваш этаж.</p>
+              <div>
+                <h2 class="main-title">Доставка</h2>
+                <p class="text">Мы с удовольствием доставим ваш товар прямо
+                  к вашему подъезду совершенно бесплатно! Ведь
+                  мы неплохо заработаем, поднимая его на ваш этаж.</p>
+              </div>
               <img src="src/images/run_man.svg" width="136" height="164" alt="">
             </li>
 
             <!--УСЛОВИЯ Гарантии-->
             <li class="terms-item">
-              <h2 class="main-title">Гарантия</h2>
-              <p class="text">Если из-за возгорания купленного у нас товара у вас
-                сгорит дом — не переживайте, мы выдадим вам новый.
-                Товар, не дом, конечно же.</p>
+              <div>
+                <h2 class="main-title">Гарантия</h2>
+                <p class="text">Если из-за возгорания купленного у нас товара у вас
+                  сгорит дом — не переживайте, мы выдадим вам новый.
+                  Товар, не дом, конечно же.</p>
+              </div>
               <img src="src/images/guarantee.svg" width="136" height="164" alt="">
             </li>
 
             <!--УСЛОВИЯ Кредита-->
             <li class="terms-item">
-              <h2 class="main-title">Кредит</h2>
-              <p class="text">Залезть в долговую яму стало проще! Кредитные 
-                консультанты подберут для вас наиболее выгодные 
-                условия кредита. Выгодные для банка, разумеется.</p>
+              <div>
+                <h2 class="main-title">Кредит</h2>
+                <p class="text">Залезть в долговую яму стало проще! Кредитные
+                  консультанты подберут для вас наиболее выгодные
+                  условия кредита. Выгодные для банка, разумеется.</p>
+              </div>
               <img src="src/images/credit.svg" width="136" height="164" alt="">
             </li>
           </ul>
@@ -207,40 +218,41 @@
 
         <!--ОТДЕЛ ОФОРМЛЕНИЯ И ИНОФРМАЦИИ ПО ДОСТАВКЕ-->
         <section class="delivery-info">
+          <span class="delivery-img-car"></span>
           <p class="delivery-text">Доставим редкий товар под заказ</p>
-
+          <span class="delivery-img-info"></span>
+        </section>
           <!--МОДАЛЬНОЕ ОКНО ДОСТАВКИ-->
           <section class="delivery-modal">
             <form>
               <h2 class="main-title">Доставка под заказ</h2>
               <span>
-                <label for="login" name="login" class="text-bold">Ваше имя:</label>
-                <input type="text" id="login" placeholder="Введите имя" class="text-small-desc">
+                <label for="login" class="text-bold">Ваше имя:</label>
+                <input type="text" name="login" id="login" placeholder="Введите имя" class="text-small-desc">
               </span>
               <span>
-                <label for="e-mail" name="e-mail" class="text-bold">Ваш e-mail:</label>
-                <input type="email" id="e-mail" placeholder="Ваш e-mail" class="text-small-desc">
+                <label for="e-mail" class="text-bold">Ваш e-mail:</label>
+                <input type="email" name="e-mail" id="e-mail" placeholder="Ваш e-mail" class="text-small-desc">
               </span>
               <span>
-                <label for="product" name="product" class="text-bold">Что нужно привезти:</label>
-                <input type="text" id="product" placeholder="В свободной форме" class="text-small-desc">
+                <label for="product" class="text-bold">Что нужно привезти:</label>
+                <input type="text" name="product" id="product" placeholder="В свободной форме" class="text-small-desc">
               </span>
               <span>
-                <label for="amount" name="amount" class="text-bold">Количество:</label>
-                <input type="number" id="amount" value="1">
+                <label for="amount" class="text-bold">Количество:</label>
+                <input type="number" name="amount" id="amount" value="1">
               </span>
               <span>
-                <label for="delivery-submit" name="delivery-submit" class="interactive-button">Отправить</label>
-                <input type="submit" id="delivery-submit" placeholder="Отправить" class="interactive-button">
+                <label for="delivery-submit" class="interactive-button">Отправить</label>
+                <input type="submit" name="delivery-submit" id="delivery-submit" class="interactive-button">
               </span>
             </form>
           </section>
-        </section>
 
 
-        <section>
-          <div>
-            <h2 class="main-title">О нас</h2>
+        <section class="about">
+          <div class="about-main">
+            <h2 class="main-title about-title">О нас</h2>
             <p class="text">
               Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
             </p>
@@ -254,14 +266,14 @@
             </ul>
             <a class="underline-remove interactive-button" href="#">Подробнее о нас</a>
           </div>
-          <div>
-            <h2 class="main-title">Контакты</h2>
-            <p class="text">Вы можете забрать товар сами, заехав в наш офис. 
+          <div class="about-main">
+            <h2 class="main-title about-title">Контакты</h2>
+            <p class="text">Вы можете забрать товар сами, заехав в наш офис.
               Заодно сможете проверить работоспособность покупки. </p>
-            <b class="title-caption">Интернет-магазин «Девайс»</b>
+            <p class="title-caption">Интернет-магазин «Девайс»</p>
             <p class="text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-            <a class="underline-remove link" href="tel:+78128121212">+7 (812) 812-12-12</a>
-            <b class="title-caption">Время работы</b>
+            <a class="link" href="tel:+78128121212">+7 (812) 812-12-12</a>
+            <p class="title-caption">Время работы</p>
             <p class="text">
               пн—пт: с 10:00 до 22:00
               сб—вс: с 10:00 до 19:00
@@ -269,18 +281,18 @@
             <a class="underline-remove interactive-button" href="#">Напишите нам</a>
           </div>
         </section>
-        <section>
-          <div>
+        <section class="mailing-list">
+          <div class="mailing-item">
             <h2 class="main-title">Подпишитесь на рассылку</h2>
-            <p class="text">
+            <p class="text mailing-item-description">
               Еженедельный дайджест с обзорами новинок,
               длительными тест-драйвами, распаковками, а также акции,
               спецпредложения и вот это вот всё.
             </p>
           </div>
-          <div>
+          <div class="mailing-item">
             <form action="https://echo.htmlacademy.ru">
-              <input type="email" name="email" placeholder="Ваш e-mail">
+              <input type="email" name="email" placeholder="Ваш e-mail" size="60">
               <input type="submit" value="Подписаться"  class="interactive-button">
             </form>
             <p class="text">Это бесплатно</p>
@@ -291,20 +303,22 @@
 
 
     <footer class="footer">
-      <div class="container">
-      <a class="underline-remove logo-footer">
-        <img src="src/images/logo_footer.svg" width="145" height="36" alt="Интернет магазин Девайс">
-      </a>
-      <div>
-        <div>
-          <p class="text-small-desc">
+      <div class="container footer-column">
+        <div class="footer-col-1">
+          <a class="underline-remove logo-footer">
+            <img src="src/images/logo_footer.svg" width="145" height="36" alt="Интернет магазин Девайс">
+          </a>
+          <p class="text-small-desc footer-col-1-descrition">
             Санкт-Петербург, набережная
             реки Карповки, 5, литера П.
           </p>
-          <a class="underline-remove title-subtitle" href="#">Доставка</a>
-          <a class="underline-remove title-subtitle" href="#">Гарантия</a>
-          <a class="underline-remove title-subtitle" href="#">Контакты</a>
-          <a class="underline-remove link-small-2" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        </div>
+        <div class="footer-col-2">
+          <div class="">
+            <a class="underline-remove title-subtitle" href="#">Доставка</a>
+            <a class="underline-remove title-subtitle" href="#">Гарантия</a>
+            <a class="underline-remove title-subtitle" href="#">Контакты</a>
+          </div>
           <ul class="social-networks-list">
             <li class="social-networks-item">
               <a class="underline-remove icon" href="#">Telegram</a>
@@ -316,12 +330,14 @@
               <a class="underline-remove icon" href="#">Twitter</a>
             </li>
           </ul>
+        </div>
+        <div class="footer-col-3">
+          <a class="underline-remove link-small-2" href="tel:+78128121212">+7 (812) 812-12-12</a>
           <a class="underline-remove" href="https://htmlacademy.ru/">
-            <img src="src/images/html_academy.svg">
+            <img src="src/images/html_academy.svg" alt="html academy">
           </a>
         </div>
-      </div>
-      </div>
+    </div>
     </footer>
   </body>
 </html>

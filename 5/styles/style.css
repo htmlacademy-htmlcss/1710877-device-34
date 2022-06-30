@@ -1,0 +1,513 @@
+/*Подключение нормалайза)*/
+
+@import "./normalize.css";
+
+/*Подключение шрифтов*/
+@font-face {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Rubik"),
+    url("../fonts/rubik/rubik-400.woff2") format("woff2");
+    font-display: swap;
+}
+@font-face {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Rubik"),
+        url("../fonts/rubik/rubik-700.woff2") format("woff2");
+    font-display: swap;
+}
+@font-face {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 800;
+    src: local("Raleway"),
+        url("../fonts/raleway/raleway-800.woff2") format("woff2");
+    font-display: swap;
+}
+
+:root {
+    --main-color: #000000;
+  }
+
+
+
+/*Общие правила*/
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
+
+/*Убираем стиль списка*/
+.catalog-list {
+    list-style: none;
+}
+
+.category-list {
+
+    list-style: none;
+}
+
+.terms-list {
+    list-style: none;
+}
+
+.partner-item::marker {
+    color: #FFC700;
+}
+
+.subtitle-list {
+    list-style: none;
+}
+
+.thumb-list {
+    list-style: none;
+}
+
+/*Убираем подчеркивание с ссылок*/
+.underline-remove {
+    text-decoration: none;
+}
+
+
+/*Контейнер*/
+.container {
+    width: 1160px;
+    margin-right: 140px;
+    margin-left: 140px;
+}
+
+
+/*Текстовые стили*/
+
+.main-title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.text {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.link {
+    font-size: 18px;
+    line-height: 30px;
+    text-decoration: none;
+}
+
+.title-subtitle {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.title-caption {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.text-bold {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+}
+
+.text-small {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.text-small-desc {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.des-term {
+    font-size: 36px;
+    line-height: 30px;
+}
+
+.des-definition {
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.category-item-description {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+}
+
+.interactive-button {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.delivery-text {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.catalog-item {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.subtitle-item {
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.filter-item {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.filter-text {
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.price {
+    font-size: 18px;
+    line-height: 21px;
+    text-align: right;
+    color: #444444;
+}
+
+
+/*(NAV)Навигационная панель*/
+
+
+/*Задний фон*/
+.container-header {
+    margin-top: 40px;
+    height: 300px;
+    background: repeat url("../src/images/background_header.svg");
+}
+
+/*Отступы слева и справа для панели навигации*/
+.nav-section {
+    padding: 0 60px;
+}
+
+.logo {
+    margin-top: -50%;
+    padding-top: -50%;
+}
+
+/*Выравнивние по блоку*/
+
+.header-search {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 30px;
+}
+
+.header-search__left {
+    display: flex;
+}
+
+.header-search__right {
+    display: flex;
+}
+
+.form-search {
+    margin-right: 80px;
+}
+
+.compare-link {
+    margin-right: 60px;
+}
+
+.catalog-title {
+    display: flex;
+    align-items: center;
+}
+
+.catalog-list {
+    display: none;
+}
+
+.main-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 30px;
+}
+
+.main-menu-list {
+    display: flex;
+    justify-content: end;
+}
+
+.menu-delivery {
+    margin-right: 47px;
+}
+
+.menu-warranty {
+    margin-right: 51px;
+}
+
+
+/*Содержимое страницы*/
+
+
+/*Слайдер*/
+.slider {
+    display: flex;
+}
+
+
+.slider-number {
+    font-weight: 700;
+    font-size: 180px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.slider-item {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.slider-item:nth-child(2) {
+    display: none;
+}
+
+.slider-item:nth-child(3) {
+    display: none;
+}
+
+.slider-number
+
+/*Flex на элипсы в слайдере*/
+.illustration-des {
+    display: flex;
+    justify-content: space-between;
+}
+
+.advertising {
+    display: flex;
+}
+
+.characteristics {
+    display: flex;
+}
+
+/*Категории товаров*/
+
+.category {
+    margin-top: 70px;
+}
+
+.category-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.category-item {
+    display: flex;
+    width: 160px;
+    height: 160px;
+    background-color: #FFE17F;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+/*Привязка иконок к списку*/
+
+.category-item-virtual {
+    background-image: url("../src/images/virtual.svg");
+}
+.category-item-monopod {
+    background-image: url("../src/images/monopod.svg");
+}
+.category-item-action {
+    background-image: url("../src/images/action_cam.svg");
+}
+.category-item-fitnes {
+    background-image: url("../src/images/fitnes.svg");
+}
+.category-item-clock {
+    background-image: url("../src/images/smart_clock.svg");
+}
+.category-item-quadro {
+    background-image:  url("../src/images/quadrocopter.svg");
+}
+.category-item-description {
+    padding-top: 193px;
+}
+
+.terms {
+    margin-top: 70px;
+}
+
+
+
+/*Доставка, гарантии, кредит*/
+.terms {
+    margin-top: 70px;
+    display: flex;
+    height: 391px;
+}
+
+.terms-list-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 64px;
+}
+
+
+.terms-list{
+    margin-left: 116px;
+}
+
+.terms-item {
+    padding-top: 72px;
+    display: flex;
+    align-items: center;
+}
+
+.terms-item:nth-child(2), .terms-item:nth-child(3) {
+    display: none;
+}
+
+/*Блок с доставкой и модальным окном*/
+.delivery-info {
+    margin-top: 70px;
+    width: 1160px;
+    height: 100px;
+}
+
+.delivery-img-car {
+    width: 125px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-image: url("../src/images/big_car.svg");
+    background-color: #000000;
+}
+
+/*MODAL DELIVERY*/
+.delivery-modal {
+    display: none;
+}
+
+
+/*О нас и контакты*/
+
+.about {
+    width: 1160px;
+    height: 545px;
+    display: flex;
+}
+
+.about-main:nth-child(1) {
+    margin-right: 131px;
+}
+
+/*Рассылка*/
+
+.mailing-item:nth-child(1) {
+    margin-bottom: 144px;
+}
+
+.mailing-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mailing-item-description {
+     margin-left: 252px;
+}
+
+/*FOOTER*/
+.footer {
+    display: flex;
+    flex-direction: row;
+    background: #444444;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-col-1, .footer-col-2, .footer-col-3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-col-1 {
+    margin-top: 62px;
+    margin-right: 124px;
+}
+
+.footer-col-1-descrition {
+    margin-top: 35px;
+}
+
+.footer-col-2 {
+    margin-top: 137px;
+    margin-right: 183px;
+}
+
+.footer-col-3 {
+    margin-top: 140px;
+}
+
+.social-networks-list {
+    display: flex;
+}
+
+.social-networks-item {
+    margin-right: 15px;
+}

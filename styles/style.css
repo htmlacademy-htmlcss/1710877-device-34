@@ -110,8 +110,7 @@ body {
 /*Контейнер*/
 .container {
     width: 1160px;
-    margin-right: 140px;
-    margin-left: 140px;
+    margin: auto;
 }
 
 

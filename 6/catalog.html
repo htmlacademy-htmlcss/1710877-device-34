@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <link text="text/css" rel="stylesheet" href="styles/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="src/images/favicon.svg">
+    <title>HTML Academy: Девайс</title>
+    <base href="https://htmlacademy-htmlcss.github.io/1710877-device-34/6/">
+</head>
+  <body>
+    <header>
+      <nav class="container container-header-catalog">
+        <div class="nav-section">
+
+          <!--ЛОГОТИП-->
+          <a class="underline-remove" href="index.html">
+            <img src="src/images/logo.svg" width="145" height="36" alt="Интернет магазин Девайс">
+          </a>
+
+          <!--СТРОКА ПОИСКА, КНОПКА ВХОДА, КОРЗИНА, СРАВНИТЬ-->
+          <section class="header-search">
+            <div class="input-search text-small-desc header-search__left">
+              <form class="form-search" action="https://echo.htmlacademy.ru">
+                <input name="search-text" type="search" placeholder="Поиск по сайту">
+                <input id="search" name="search" type="submit" value="Найти">
+              </form>
+              <a class="underline-remove login text" href="#">
+                <span>Войти</span>
+              </a>
+            </div>
+            <div class="buttons text header-search__right">
+              <a class="underline-remove compare-link" href="#">
+                <span>Сравнить</span>
+              </a>
+              <a class="underline-remove whitelist-link" href="#">
+                <span>Корзина</span>
+              </a>
+            </div>
+          </section>
+
+          <!--РАСКРЫВАЮЩИЙСЯ СПИСОК-->
+          <section class="main-menu">
+            <div class="catalog">
+              <a class="underline-remove title-subtitle catalog-title" href="catalog.html">
+                <span>Каталог товаров</span>
+                <img src="./src/images/plus.svg">
+              </a>
+              <ul class="catalog-list">
+                <li class="catalog-item"><a class="underline-remove" href="#">Виртуальная реальность</a></li>
+                <li class="catalog-item"><a class="underline-remove" href="#">Моноподы для селфи</a></li>
+                <li class="catalog-item"><a class="underline-remove" href="#">Экшн-камеры</a></li>
+                <li class="catalog-item"><a class="underline-remove" href="#">Фитнес-браслеты</a></li>
+                <li class="catalog-item"><a class="underline-remove" href="#">Умные часы</a></li>
+                <li class="catalog-item"><a class="underline-remove" href="#">Квадрокоптеры</a></li>
+              </ul>
+            </div>
+
+            <div class="main-menu-list">
+              <a class="underline-remove menu-delivery title-subtitle" href="#">Доставка</a>
+              <a class="underline-remove menu-warranty title-subtitle" href="#">Гаранитии</a>
+              <a class="underline-remove menu-contact title-subtitle" href="#">Контакты</a>
+            </div>
+          </section>
+        </div>
+      </nav>
+    </header>
+
+
+    <main>
+
+      <section class="container">
+
+        <!--Название отдела и путь по каталогу-->
+        <div class="left-margin">
+          <section class="subtitle">
+              <h1 class="main-title">Моноподы для селфи</h1>
+              <ul class="subtitle-list">
+                  <li class="subtitle-item"><a class="underline-remove" href="index.html">Главная</a></li>
+                  <li class="subtitle-item"><a class="underline-remove" href="#">Каталог товаров</a></li>
+                  <li class="subtitle-item"><a class="underline-remove" href="#">Монопод для селфи</a></li>
+              </ul>
+          </section>
+        </div>
+      </section>
+
+      <section class="content-bg">
+      <section class="container">
+        <div class="left-margin">
+        <section class="content">
+
+          <!--Левый блок-->
+          <div class="left-block">
+              <form action="https://echo.htmlacademy.ru" class="filter-list">
+                  <span class="filter-item filter">Фильтр:</span>
+
+                  <!--Ползунок с ценой-->
+                  <span class="text-bold filter-price">Стоимость</span>
+                  <div>
+                      <input type="range" min="0" max="10000" step="1" value="5000" name="price_range">
+                  </div>
+
+                  <!--Выбор цвета-->
+                  <span class="text-bold">Цвет</span>
+                  <table class="filter-text">
+                    <tr>
+                      <th><input type="checkbox" name="black" id="black" value="black" checked></th>
+                      <th><label for="black">Черный</label></th>
+                    </tr>
+                    <tr>
+                      <th><input type="checkbox" name="white" id="white" value="white" checked></th>
+                      <th><label for="white">Белый</label></th>
+                    </tr>
+                    <tr>
+                      <th><input type="checkbox" name="blue" id="blue" value="blue"></th>
+                      <th><label for="blue">Синий</label></th>
+                    </tr>
+                    <tr>
+                      <th><input type="checkbox" name="red" id="red" value="red"></th>
+                      <th><label for="red">Красный</label></th>
+                    </tr>
+                    <tr>
+                      <th><input type="checkbox" name="pink" id="pink" value="pink"></th>
+                      <th><label for="pink">Розовый</label></th>
+                    </tr>
+                  </table>
+
+                  <!--Bluetooth-->
+                  <span class="text-bold">Bluetooth</span>
+                  <table class="filter-text">
+                    <tr>
+                      <th><input type="radio" name="bluetooth" id="yes" value="yes" checked></th>
+                      <th><label for="yes">Есть</label></th>
+                    </tr>
+                    <tr>
+                      <th><input type="radio" name="bluetooth" id="no" value="no"></th>
+                      <th><label for="no">Нет</label></th>
+                    </tr>
+                  </table>
+
+                  <!--Подведение итогов (ПОКАЗАТЬ)-->
+                  <div>
+                      <button class="interactive-button" type="submit">Показать</button>
+                  </div>
+              </form>
+          </div>
+
+          <!--Правый блок-->
+          <div class="right-block">
+              <div class="sorting-main">
+                  <p class="filter-item sorting">Сортировка:</p>
+                  <select class="top-filter text" name="top-filter">
+                      <option value="1">По цене</option>
+                      <option value="2">Популярные</option>
+                      <option value="3">По наименованию</option>
+                      <option value="4">Обсуждаемые</option>
+                      <option value="5">По оценке</option>
+                  </select>
+                  <span></span>
+              </div>
+
+              <!--Изображения товаров, описание и их стоимость-->
+              <section class="thumb">
+                <ul class="thumb-list">
+                  <li>
+                    <a class="underline-remove" href="#" class="thumb-item">
+                      <img src="src/images/selfie_1.png" width="360" height="380" alt="">
+                      <div class="thumb-caption">
+                          <p class="text-bold thumb-description">Любительская селфи-палка</p>
+                          <p class="price thumb-price">500 &#8381;</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="underline-remove" href="#" class="thumb-item">
+                      <img src="src/images/selfie_2.png" width="360" height="380" alt="">
+                      <div class="thumb-caption">
+                          <p class="text-bold thumb-description">Профессиональная селфи-палка</p>
+                          <p class="price thumb-price">1500 &#8381;</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="underline-remove" href="#" class="thumb-item">
+                      <img src="src/images/selfie_3.png" width="360" height="380" alt="">
+                      <div class="thumb-caption">
+                          <p class="text-bold thumb-description">Непотопляемая селфи-палка</p>
+                          <p class="price thumb-price">2500 &#8381;</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="underline-remove" href="#" class="thumb-item">
+                      <img src="src/images/selfie_4.png" width="360" height="380" alt="">
+                      <div class="thumb-caption">
+                          <p class="text-bold thumb-description">Селфи-палка «Следуй за мной»</p>
+                          <p class="price thumb-price">500 &#8381;</p>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+
+                <!--ЗАГРУЗИТЬ ЕЩЕ-->
+                <div class="show-more">
+                  <a class="underline-remove" href="#" class=" interactive-button">Загрузить ещё</a>
+                </div>
+
+                <!--ВИДЖЕТ СТРАНИЦ-->
+                <div class="pagination">
+                  <a class="underline-remove title-subtitle widget-page" href="#">Назад</a>
+                  <ul class="widget-page-list">
+                      <li class="widget-page-item">
+                          <a class="underline-remove" href="#">1</a>
+                      </li>
+                      <li class="widget-page-item">
+                          <a class="underline-remove" href="#">2</a>
+                      </li>
+                      <li class="widget-page-item">
+                          <a class="underline-remove" href="#">3</a>
+                      </li>
+                      <li class="widget-page-item">
+                          <a class="underline-remove" href="#">...</a>
+                      </li>
+                      <li class="widget-page-item">
+                          <a class="underline-remove" href="#">15</a>
+                      </li>
+                  </ul>
+                  <a class="underline-remove title-subtitle widget-page" href="#">Вперёд</a>
+                </div>
+              </section>
+          </div>
+        </section>
+        </div>
+      </section>
+      </div>
+      </section>
+    </main>
+
+
+    <footer class="footer">
+      <div class="container footer-column">
+        <div class="footer-col-1">
+          <a class="underline-remove logo-footer">
+            <img src="src/images/logo_footer.svg" width="145" height="36" alt="Интернет магазин Девайс">
+          </a>
+          <p class="text-small-desc footer-col-1-descrition">
+            Санкт-Петербург, набережная
+            реки Карповки, 5, литера П.
+          </p>
+        </div>
+        <div class="footer-col-2">
+          <div class="de-ga-co">
+            <a class="underline-remove title-subtitle" href="#">Доставка</a>
+            <a class="underline-remove title-subtitle" href="#">Гарантия</a>
+            <a class="underline-remove title-subtitle" href="#">Контакты</a>
+          </div>
+          <ul class="social-networks-list">
+            <li class="social-networks-item">
+              <a class="underline-remove icon" href="#">Telegram</a>
+            </li>
+            <li class="social-networks-item">
+              <a class="underline-remove icon" href="#">Youtube</a>
+            </li>
+            <li class="social-networks-item">
+              <a class="underline-remove icon" href="#">Twitter</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col-3">
+          <a class="underline-remove link-small-2" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          <a class="underline-remove" href="https://htmlacademy.ru/">
+            <img src="src/images/html_academy.svg" alt="html academy">
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

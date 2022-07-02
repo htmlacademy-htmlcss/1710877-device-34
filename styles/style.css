@@ -47,9 +47,11 @@ html {
 }
 
 body {
+    display: block;
+    position: relative;
+    margin: 0 auto;
     font-family: 'Rubik', sans-serif;
     font-style: normal;
-    margin: 0;
     padding: 0;
     min-height: 100%;
 }
@@ -81,6 +83,24 @@ body {
     list-style: none;
 }
 
+.widget-page-list {
+    list-style: none;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+
+.social-networks-list {
+    list-style: none;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+
 /*Убираем подчеркивание с ссылок*/
 .underline-remove {
     text-decoration: none;
@@ -90,8 +110,7 @@ body {
 /*Контейнер*/
 .container {
     width: 1160px;
-    margin-right: 140px;
-    margin-left: 140px;
+    margin: auto;
 }
 
 
@@ -212,7 +231,6 @@ body {
 .price {
     font-size: 18px;
     line-height: 21px;
-    text-align: right;
     color: #444444;
 }
 
@@ -224,6 +242,13 @@ body {
 .container-header {
     margin-top: 40px;
     height: 300px;
+    background: repeat url("../src/images/background_header.svg");
+}
+
+/*Задний фон каталог*/
+.container-header-catalog {
+    margin-top: 40px;
+    height: 186px;
     background: repeat url("../src/images/background_header.svg");
 }
 
@@ -469,11 +494,165 @@ body {
      margin-left: 252px;
 }
 
+
+/*Страница каталога*/
+
+.content-bg {
+    background: #F0F0F0;
+}
+
+.content {
+    display: flex;
+}
+
+.left-margin {
+    padding-left: 60px;
+}
+
+.subtitle-list {
+    margin-left: 0px;
+    padding-left: 0px;
+    display: flex;
+}
+
+.subtitle-item {
+    margin-right: 36px;
+}
+
+
+
+/*Левый блок*/
+
+.left-block {
+    margin: 0px;
+    width: 320px;
+}
+
+.filter-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-price {
+    margin-bottom: 30px;
+}
+
+.filter {
+    padding: 25px 0px;
+}
+
+.filter-text {
+    margin-top: 20px;
+    display: table;
+}
+
+th {
+    text-align: start;
+}
+
+th:first-child {
+    margin: 0px;
+    padding: 0px;
+    width: 36px;
+}
+
+/*Правый блок*/
+
+.right-block {
+    margin: 0px;
+    width: 840px;
+}
+
+.sorting-main {
+    padding: 0px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sorting {
+    margin: 0px;
+    padding: 25px 0px;
+}
+
+.thumb {
+    width: 840px;
+    padding: 70px 40px 78px;
+    background: #FFFFFF;
+}
+
+.thumb-list {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    padding-inline-start: 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.thumb-caption {
+    margin-top: 32px;
+    width: 360px;
+    display: flex;
+}
+
+.thumb-description {
+    margin: 0px;
+    width: 220px;
+}
+
+.thumb-price {
+    margin: 0px;
+    text-align: end;
+    width: 140px;
+}
+
+.show-more {
+    margin-top: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 760px;
+    height: 55px;
+
+    border: 3px solid #E5E5E5;
+}
+
+.pagination {
+    margin-top: 44px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 71px;
+    background: #EBEBEB;
+}
+
+.widget-page {
+    padding: 25px;
+}
+
+.widget-page-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+}
+
 /*FOOTER*/
 .footer {
     display: flex;
     flex-direction: row;
     background: #444444;
+    height: 321px;
 }
 
 .footer-column {
@@ -487,27 +666,39 @@ body {
 }
 
 .footer-col-1 {
+    width: 240px;
+    height: 182px;
     margin-top: 62px;
     margin-right: 124px;
 }
 
 .footer-col-1-descrition {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
     margin-top: 35px;
 }
 
 .footer-col-2 {
+    width: 444px;
     margin-top: 137px;
     margin-right: 183px;
 }
 
-.footer-col-3 {
-    margin-top: 140px;
+.de-ga-co {
+    display: flex;
+    justify-content: space-between;
 }
 
 .social-networks-list {
+    margin-top: 62px;
     display: flex;
+    justify-content: space-evenly;
 }
 
 .social-networks-item {
     margin-right: 15px;
+}
+
+.footer-col-3 {
+    margin-top: 140px;
 }

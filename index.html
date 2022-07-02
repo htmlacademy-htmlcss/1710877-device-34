@@ -17,8 +17,8 @@
         <div class="nav-section">
 
           <!--ЛОГОТИП-->
-          <a class="underline-remove logo">
-            <img src="src/images/logo.svg" width="145" height="36" alt="Интернет магазин Девайс">
+          <a class="underline-remove">
+            <img class="logo" src="src/images/logo.svg" alt="Интернет магазин Девайс">
           </a>
 
           <!--СТРОКА ПОИСКА, КНОПКА ВХОДА, КОРЗИНА, СРАВНИТЬ-->
@@ -71,93 +71,119 @@
 
 
     <main class="container">
-      <div>
 
-        <!--ЗАДНИЙ ФОН ПОД СЛАЙДЕР-->
-        <section class="advertising slider-backrgound">
+        <!--СЛАЙДЕР-->
+        <section class="advertising">
 
-          <!--СЛАЙДЕР-->
-          <div class="slider">
-            <button class="slider-left" type="button">Назад!</button>
 
-            <!--ОБОЛОЧКА ДЛЯ СЛАЙДЕРОВ-->
-            <ul>
+          <!--Сетка под блоки-->
+          <div class="slider-block">
+            <!--Грид-блок слева-->
+            <div class="slider-block-left">
 
-              <!--СЛАЙДЕР №1-->
-              <li class="slider-item">
-                <img src="src/images/slider-1.png" width="560" height="560" alt="Квадрокоптер модели XXX">
-                <div>
-                  <b class="slider-tit main-title">Порхает как бабочка, жалит как пчела!</b>
-                  <p class="slider-tit-specification text">Этот обычный, на первый взгляд, квадрокоптер оснащен
-                  мощным лазером, замаскированным под стандартную камеру.</p>
-                  <p class="slider-number">01</p>
-                </div>
+              <!--Переключатели вперед, назад-->
+              <div class="slider-switching">
+
+                <!--Кнопка назад(влево)-->
+                <button class="slider-left slider-button" type="button"></button>
+
+                <!--Кнопка вперед(вправо)-->
+                <button class="slider-right slider-button" type="button"></button>
+
+              </div>
+
+              <!--Изображение товара в данном слайде-->
+              <p class="slider-image slider-image-1" width="560" height="560">
+
+              <!--Номер слайдера-->
+              <p class="slider-number">01</p>
+
+            </div>
+
+            <!--Грид-блок справа-->
+            <!--СПИСОК СЛАЙДЕРОВ-->
+            <ul class="slider-block-right">
+
+                <!--СЛАЙДЕР №1-->
+                <li class="slider-item">
+
+                  <div class="slider-spec">
+                    <p class="main-title">Порхает как бабочка, жалит как пчела!</p>
+                    <p class="text">Этот обычный, на первый взгляд, квадрокоптер оснащен
+                    мощным лазером, замаскированным под стандартную камеру.</p>
+                  </div>
+
+                  <!--Характеристики товара-->
+                  <div class="characteristics">
+                    <dl class="characteristics-divide">
+                      <dt class="des-term">800 м</dt>
+                      <dd class="des-definition">Дальность полета</dd>
+                      <dt class="des-term">50 м</dt>
+                      <dd class="des-definition">Радиус поражения</dd>
+                    </dl>
+                  </div>
+
+
                 <div class="illustration-des">
                   <a class="underline-remove interactive-button" href="#">Подробнее</a>
                 </div>
-                <div class="characteristics">
-                  <dl class="characteristics-divide">
-                    <dt class="des-term">800 м</dt>
-                    <dd class="des-definition">Дальность полета</dd>
-                    <dt class="des-term">50 м</dt>
-                    <dd class="des-definition">Радиус поражения</dd>
-                  </dl>
-                </div>
-              </li>
 
-              <!--СЛАЙДЕР №2-->
-              <li class="slider-item">
-                <img src="src/images/slider-2.png" width="560" height="560" alt="Фитнес-браслет">
-                <div>
-                  <b class="slider-tit main-title">Худеем правильно!</b>
-                  <p class="slider-tit-specification text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-                  <p class="slider-number">02</p>
+                <!--Индикаторы нахождения на том или ином слайде-->
+                <div class="slider-indicators">
+                  <button class="ellipse" type="button" name="ellipse">Ellipse</button>
+                  <button class="ellipse" type="button" name="ellipse">Ellipse</button>
+                  <button class="ellipse" type="button" name="ellipse">Ellipse</button>
                 </div>
-                <div class="illustration-des">
-                  <a class="underline-remove interactive-button" href="#">Подробнее</a>
-                </div>
-                <div class="characteristics">
-                  <dl class="characteristics-divide">
-                    <dt class="des-term">360 часов</dt>
-                    <dd class="des-definition">Без подзарядки</dd>
-                  </dl>
-                </div>
-              </li>
 
-              <!--СЛАЙДЕР №3-->
-              <li class="slider-item">
-                <img src="src/images/slider-3.png" width="560" height="560" alt="Монопод">
-                <div>
-                  <b class="slider-tit main-title">Делай селфи, как Бен Стиллер! </b>
-                  <p class="slider-tit-specification text">
-                    Самая длинная палка для селфи доступна в нашем магазине.
-                    Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
-                  </p>
-                  <p class="slider-number">03</p>
-                </div>
-                <div class="illustration-des">
-                  <a class="underline-remove interactive-button" href="#">Подробнее</a>
-                </div>
-                <div class="characteristics">
-                  <dl class="characteristics-divide">
-                    <dt class="des-term">8,5 м</dt>
-                    <dd class="des-definition">Длина палки</dd>
-                    <dt class="des-term">5 кг</dt>
-                    <dd class="des-definition">Вес палки</dd>
-                    <dt class="des-term">Карбон</dt>
-                    <dd class="des-definition">Материал</dd>
-                  </dl>
-                </div>
-              </li>
+                <!--СЛАЙДЕР №2-->
+                <li class="slider-item">
+                  <img src="src/images/slider-2.png" width="560" height="560" alt="Фитнес-браслет">
+                  <div>
+                    <b class="slider-tit main-title">Худеем правильно!</b>
+                    <p class="slider-tit-specification text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+                    <p class="slider-number">02</p>
+                  </div>
+                  <div class="illustration-des">
+                    <a class="underline-remove interactive-button" href="#">Подробнее</a>
+                  </div>
+                  <div class="characteristics">
+                    <dl class="characteristics-divide">
+                      <dt class="des-term">360 часов</dt>
+                      <dd class="des-definition">Без подзарядки</dd>
+                    </dl>
+                  </div>
+                </li>
+
+                <!--СЛАЙДЕР №3-->
+                <li class="slider-item">
+                  <img src="src/images/slider-3.png" width="560" height="560" alt="Монопод">
+                  <div>
+                    <b class="slider-tit main-title">Делай селфи, как Бен Стиллер! </b>
+                    <p class="slider-tit-specification text">
+                      Самая длинная палка для селфи доступна в нашем магазине.
+                      Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
+                    </p>
+                    <p class="slider-number">03</p>
+                  </div>
+                  <div class="illustration-des">
+                    <a class="underline-remove interactive-button" href="#">Подробнее</a>
+                  </div>
+                  <div class="characteristics">
+                    <dl class="characteristics-divide">
+                      <dt class="des-term">8,5 м</dt>
+                      <dd class="des-definition">Длина палки</dd>
+                      <dt class="des-term">5 кг</dt>
+                      <dd class="des-definition">Вес палки</dd>
+                      <dt class="des-term">Карбон</dt>
+                      <dd class="des-definition">Материал</dd>
+                    </dl>
+                  </div>
+                </li>
             </ul>
-            <button class="slider-right" type="button">Вперед!</button>
-          </div>
-          <div class="slider-indicators">
-            <button class="ellipse" type="button" name="ellipse">Ellipse</button>
-            <button class="ellipse" type="button" name="ellipse">Ellipse</button>
-            <button class="ellipse" type="button" name="ellipse">Ellipse</button>
+
           </div>
         </section>
+
 
         <!--БЛОК КАТЕГОРИИ-->
         <section class="category">

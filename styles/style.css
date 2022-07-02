@@ -242,14 +242,14 @@ body {
 .container-header {
     margin-top: 40px;
     height: 300px;
-    background: repeat url("../src/images/background_header.svg");
+    background: #FFE17F;
 }
 
 /*Задний фон каталог*/
 .container-header-catalog {
     margin-top: 40px;
     height: 186px;
-    background: repeat url("../src/images/background_header.svg");
+    background: #FFE17F;
 }
 
 /*Отступы слева и справа для панели навигации*/
@@ -258,8 +258,9 @@ body {
 }
 
 .logo {
-    margin-top: -50%;
-    padding-top: -50%;
+    width: 145px;
+    height: 36px;
+    margin-top: -25px;
 }
 
 /*Выравнивние по блоку*/
@@ -322,25 +323,78 @@ body {
 
 
 /*Слайдер*/
-.slider {
-    display: flex;
+
+.slider-block {
+    display: grid;
 }
 
+.slider-block-left {
+    margin-top: -150px;
+
+    display: grid;
+    grid-template-columns: 560px 550px;
+    grid-template-rows: 560px;
+
+    width: 1110px;
+    height: 560px;
+}
+
+.slider-image {
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+}
 
 .slider-number {
+    grid-column: 2 / 2;
+    grid-row: 1 / 1;
+
+    margin-top: 0px;
+    padding-top: 80px;
+    justify-self: end;
+
     font-weight: 700;
     font-size: 180px;
     line-height: 30px;
     color: #FFFFFF;
 }
 
-.slider-item {
+/*Переключатели вперед, назад*/
+.slider-switching {
+    padding-left: 30px;
+
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 530px;
+}
+.slider-button {
+    width: 20px;
+    height: 60px;
+    background-repeat: no-repeat;
+    border: 0px;
+    background-color: white;
 }
 
+/*Кнопка назад(влево)*/
+.slider-left {
+    background-image: url("../src/images/left.svg");
+}
+
+/*Кнопка вперед(вправо)*/
+.slider-right {
+    background-image: url("../src/images/right.svg");
+}
+
+.slider-image-1 {
+    background-repeat: no-repeat;
+    background-image: url("../src/images/slider-1.png");
+}
+
+/*Сокрытие остальных слайдеров*/
 .slider-item:nth-child(2) {
     display: none;
 }
@@ -349,21 +403,6 @@ body {
     display: none;
 }
 
-.slider-number
-
-/*Flex на элипсы в слайдере*/
-.illustration-des {
-    display: flex;
-    justify-content: space-between;
-}
-
-.advertising {
-    display: flex;
-}
-
-.characteristics {
-    display: flex;
-}
 
 /*Категории товаров*/
 

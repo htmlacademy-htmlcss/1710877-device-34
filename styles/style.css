@@ -83,6 +83,16 @@ body {
     list-style: none;
 }
 
+.slider-block-right {
+    list-style: none;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+
+
 .widget-page-list {
     list-style: none;
     margin-block-start: 0px;
@@ -174,6 +184,8 @@ body {
 .des-definition {
     font-size: 16px;
     line-height: 30px;
+    margin-inline-start: 0px;
+    color: #444444;
 }
 
 .category-item-description {
@@ -242,14 +254,14 @@ body {
 .container-header {
     margin-top: 40px;
     height: 300px;
-    background: repeat url("../src/images/background_header.svg");
+    background: #FFE17F;
 }
 
 /*Задний фон каталог*/
 .container-header-catalog {
     margin-top: 40px;
     height: 186px;
-    background: repeat url("../src/images/background_header.svg");
+    background: #FFE17F;
 }
 
 /*Отступы слева и справа для панели навигации*/
@@ -258,8 +270,9 @@ body {
 }
 
 .logo {
-    margin-top: -50%;
-    padding-top: -50%;
+    width: 145px;
+    height: 36px;
+    margin-top: -25px;
 }
 
 /*Выравнивние по блоку*/
@@ -322,25 +335,175 @@ body {
 
 
 /*Слайдер*/
-.slider {
-    display: flex;
+
+/*ОБЩИЙ БЛОК*/
+.slider-block {
+    display: grid;
+    grid-template-columns: 600px 560px;
+    grid-template-rows: 560px;
 }
 
+/*ЛЕВЫЙ БЛОК*/
+.slider-block-left {
+    margin-top: -150px;
+
+    display: grid;
+    grid-template-columns: 560px 550px;
+    grid-template-rows: 560px;
+
+    width: 1110px;
+    height: 560px;
+}
+
+.slider-image {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
 
 .slider-number {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+
+    margin-top: 0px;
+    padding-top: 80px;
+    justify-self: end;
+
     font-weight: 700;
     font-size: 180px;
     line-height: 30px;
     color: #FFFFFF;
 }
 
-.slider-item {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: row;
+/*ПРАВЫЙ БЛОК*/
+
+.slider-block-right {
+    margin-top: -25px;
+
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
 }
 
+.slider-item {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+
+    width: 560px;
+    height: 401px;
+}
+
+.slider-spec {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    margin-bottom: 51px;
+}
+
+.slider-show-more {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #FFE17F;
+
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+
+    width: 220px;
+    height: 8px;
+}
+
+.slider-indicators {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 20px;
+
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.slider-characteristics {
+    margin-top: 50px;
+
+    display: flex;
+    align-items: start;
+    gap: 20px;
+
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+}
+
+.slider-spec-main, .slider-spec-descrip {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.slider-spec-descrip {
+    margin-top: 29px;
+}
+
+.characteristics-divide {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.ellipse {
+    width: 12px;
+    height: 12px;
+    background-repeat: no-repeat;
+    border: 0px;
+    background-image: url("../src/images/ellipse.svg");
+}
+
+/*Переключатели вперед, назад*/
+.slider-switching {
+    padding-left: 30px;
+
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 530px;
+}
+.slider-button {
+    width: 20px;
+    height: 60px;
+    background-repeat: no-repeat;
+    border: 0px;
+    background-color: white;
+}
+
+/*Кнопка назад(влево)*/
+.slider-left {
+    background-image: url("../src/images/left.svg");
+}
+
+/*Кнопка вперед(вправо)*/
+.slider-right {
+    background-image: url("../src/images/right.svg");
+}
+
+.slider-image-1 {
+    background-repeat: no-repeat;
+    background-image: url("../src/images/slider-1.png");
+}
+.slider-image-2 {
+    background-repeat: no-repeat;
+    background-image: url("../src/images/slider-2.png");
+}
+.slider-image-3 {
+    background-repeat: no-repeat;
+    background-image: url("../src/images/slider-3.png");
+}
+
+/*Сокрытие остальных слайдеров*/
 .slider-item:nth-child(2) {
     display: none;
 }
@@ -349,26 +512,11 @@ body {
     display: none;
 }
 
-.slider-number
-
-/*Flex на элипсы в слайдере*/
-.illustration-des {
-    display: flex;
-    justify-content: space-between;
-}
-
-.advertising {
-    display: flex;
-}
-
-.characteristics {
-    display: flex;
-}
 
 /*Категории товаров*/
 
 .category {
-    margin-top: 70px;
+    margin-top: -70px;
 }
 
 .category-list {
